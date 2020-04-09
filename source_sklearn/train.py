@@ -35,7 +35,11 @@ if __name__ == '__main__':
     parser.add_argument('--model-dir', type=str, default=os.environ['SM_MODEL_DIR'])
     parser.add_argument('--data-dir', type=str, default=os.environ['SM_CHANNEL_TRAIN'])
 
-    ## TODO: Add any additional arguments that you will need to pass into your model
+    parser.add_argument('--loss', type=str, default='deviance')
+    parser.add_argument('--learning_rate', type=float, default=0.08)
+    parser.add_argument('--n_estimators', type=int, default=100)
+    parser.add_argument('--subsample', type=float, default=0.8)
+    parser.add_argument('--max_depth', type=int, default=4)
 
     # args holds all passed-in arguments
     args = parser.parse_args()
