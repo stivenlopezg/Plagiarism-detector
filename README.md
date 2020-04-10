@@ -27,6 +27,14 @@ This project will be broken down into three main notebooks:
 * Train your model and deploy it using SageMaker.
 * Evaluate your deployed classifier.
 
+## Results
+
+A Gradient Boosting was trained and when evaluating it in the test data, the following metrics were obtained:
+
+* **Accuracy**: 0.92
+* **Precision**: 0.88
+* **Recall**: 1
+* **F1**: 0.93
 ---
 
 Please see the [README](https://github.com/udacity/ML_SageMaker_Studies/tree/master/README.md) in the root directory for instructions on setting up a SageMaker notebook and downloading the project files (as well as the other notebooks).
